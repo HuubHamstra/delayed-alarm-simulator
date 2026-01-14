@@ -16,7 +16,7 @@ const Index = () => {
           </div>
           <div>
             <h1 className="text-2xl md:text-3xl font-bold text-foreground">
-              Maritime Cyber Security Demo
+              Cyberdrill Engine Room - Demo
             </h1>
             <p className="text-sm text-muted-foreground">
               Engine Room Telemetry Manipulation Simulation
@@ -29,13 +29,21 @@ const Index = () => {
           <AlertTriangle className="w-5 h-5 text-warning flex-shrink-0 mt-0.5" />
           <div className="text-sm text-muted-foreground space-y-2">
             <p>
-              This simulation demonstrates how <span className="text-accent font-medium">cyber data manipulation</span> (smoothing + delay) 
-              causes the Bridge to receive delayed and falsified sensor readings compared to the Engine Room.
+              This simulation demonstrates how{" "}
+              <span className="text-accent font-medium">
+                cyber data manipulation
+              </span>{" "}
+              (smoothing + delay) causes the Bridge to receive delayed and
+              falsified sensor readings compared to the Engine Room.
             </p>
             <p>
-              Watch how the <span className="text-safe font-medium">Engine Room alarm</span> triggers first, 
-              while the <span className="text-warning font-medium">compromised Bridge display</span> shows 
-              "normal" readings until it's too late.
+              Watch how the{" "}
+              <span className="text-safe font-medium">Engine Room alarm</span>{" "}
+              triggers first, while the{" "}
+              <span className="text-warning font-medium">
+                compromised Bridge display
+              </span>{" "}
+              shows "normal" readings until it's too late.
             </p>
           </div>
         </div>
@@ -106,27 +114,41 @@ const Index = () => {
 
         {/* Legend */}
         <div className="panel-card">
-          <h3 className="text-sm font-semibold text-foreground mb-3">Simulation Phases</h3>
+          <h3 className="text-sm font-semibold text-foreground mb-3">
+            Simulation Phases
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
             <div className="flex items-start gap-3">
               <div className="w-3 h-3 rounded-full bg-safe mt-1 flex-shrink-0" />
               <div>
-                <span className="font-medium text-foreground">Phase 1 (0–10s):</span>
-                <span className="text-muted-foreground ml-1">Normal operation. All systems nominal.</span>
+                <span className="font-medium text-foreground">
+                  Phase 1 (0–10s):
+                </span>
+                <span className="text-muted-foreground ml-1">
+                  Normal operation. All systems nominal.
+                </span>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-3 h-3 rounded-full bg-warning mt-1 flex-shrink-0" />
               <div>
-                <span className="font-medium text-foreground">Phase 2 (10–30s):</span>
-                <span className="text-muted-foreground ml-1">Fuel system obstruction. Pressure rising.</span>
+                <span className="font-medium text-foreground">
+                  Phase 2 (10–30s):
+                </span>
+                <span className="text-muted-foreground ml-1">
+                  Fuel system obstruction. Pressure rising.
+                </span>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-3 h-3 rounded-full bg-danger mt-1 flex-shrink-0" />
               <div>
-                <span className="font-medium text-foreground">Phase 3 (30–60s):</span>
-                <span className="text-muted-foreground ml-1">Critical pressure. Bridge alarm delayed by cyber manipulation.</span>
+                <span className="font-medium text-foreground">
+                  Phase 3 (30–60s):
+                </span>
+                <span className="text-muted-foreground ml-1">
+                  Critical pressure. Bridge alarm delayed by cyber manipulation.
+                </span>
               </div>
             </div>
           </div>
@@ -136,7 +158,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="max-w-7xl mx-auto mt-8 text-center text-xs text-muted-foreground">
         <p>
-          Cyber manipulation: 10s delay + exponential smoothing (α=0.92) applied to bridge telemetry feed.
+          Cyber manipulation: 10s delay + exponential smoothing (α=0.92) applied
+          to bridge telemetry feed.
         </p>
       </footer>
     </div>
