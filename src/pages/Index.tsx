@@ -44,7 +44,7 @@ const Index = () => {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto space-y-6">
         {/* Panels Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
           {/* True System Panel */}
           <div className="relative">
             <div className="absolute -top-3 left-4 px-2 py-0.5 bg-background text-xs font-mono text-accent border border-accent/30 rounded z-10">

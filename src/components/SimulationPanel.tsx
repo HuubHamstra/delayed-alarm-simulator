@@ -46,7 +46,7 @@ export const SimulationPanel = ({
   return (
     <div
       className={cn(
-        "panel-card relative overflow-hidden",
+        "panel-card relative overflow-hidden h-full flex flex-col",
         alarm && "ring-2 ring-danger animate-pulse-glow",
         compromised && "border-warning/50"
       )}
@@ -76,7 +76,7 @@ export const SimulationPanel = ({
       </div>
 
       {/* Metrics */}
-      <div className="space-y-5">
+      <div className="space-y-5 flex-1">
         {/* Pressure */}
         <div>
           <div className="flex justify-between items-baseline mb-1">
